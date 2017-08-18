@@ -1,43 +1,39 @@
 
 /*
-Interface programming course
 
-    1) Variabili Globali: 
-        grad2rad: coefficiente per convertire i gradi in radiati
-        ellipseSim: per simulare la traiettoria ellittica
-        velSyst: velocità del sistema solare
+# Solar system animation
 
-        Variabili fisse del DIV "Sun"
-            1) Posizione del sole
-            2) Raggio del Sole
-            3) Coordinate del sole
-            4) Stile CSS
+1. Global variables: 
 
-    2) Oggetto Pianeta: 
-        L'oggetto pianeta è una funzione costruttore del pianeta
-        memorizzata dentro una variabile
-        La funzione prende in ingresso i parametri di:
-            1) Nome del pianeta (lo stesso nome dell'Id del Div)
-            2) Raggio
-            3) Distanza tra la superficie del sole e del pianeta
-            4) Angolo iniziale
-            5) Colore (una stringa)
+grad2rad: coefficient to convert degrees to radiant
+ellipseSim: to simulate elliptic orbit
+velSyst: velocity of solar system animation
 
-        Il metodo update è una funzione che aumenta l'angolo iniziale di un certo
-        passo (speedIncr) e restituisce una nuova posizione in funzione dell'angolo incrementato.
+2. Fixed variable of sun <div> element
 
-    
-    3) Funzione render(): 
-        La funzione render(), renderizza l'immagine tramite metodi jQuery
-        che modificano lo stile CSS di ogni elemento DIV con gli appositi parametri
-        immessi in ogni istanza di Planet.
-        L'animazione viene effettuata tramite il metodo window.requestAnimationFrame(callback).
-        Questo metodo comunica al browser che si vuole effettuare un'animazione
-        e richiede che il browser chiami una specifica funzione che aggiorni l'animazione
-        prima del prossimo rendering.
-        Per far si che questo accada, è necessario che il metodo requestAnimationFrame
-        sia richiamato all'interno della stessa callback routine. 
-        Il sampling rate è 60fps. 
+- Sun Position
+- Sun radius
+- Sun Coordinates
+- CSS style
+
+3. Planet Object: 
+
+Planet object has got a constructor function that creates the object inside a variable:
+the constructor takes as inputs parameters of: 
+
+1. name of the planet
+2. radius
+3. distance between a point on sun's circumference and the planet's one
+4. initial angle
+5. color (a string)
+
+The update method is a function that increase the initial angle of a certain step (_**speedIncr**_) and returns the new position based on the the incremented angle.     
+
+4. Rendering function:
+
+The _render()_ function renders the image by using jQuery methods to control CSS style of each <div>element by using proper parameters of each Planet instance.
+Animation is done by using a callback inside the _**window.requestAnimationFrame(callback)**_. This method tells the browser that we want to render the animation and request that the browser calls a specific function that updates the animation before the next renderign. 
+To do so, it's necessary that the _requestAnimationFrame_ method is called inside the callback routine itself. (Sample rate is 60fps).
 
 
 
