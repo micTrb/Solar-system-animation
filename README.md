@@ -1,6 +1,8 @@
 # Solar system animation
 
 
+![Screenshot](Image.png)
+
 ### 1. Global variables: 
 
 * _grad2rad_: coefficient to convert degrees to radiant
@@ -31,4 +33,6 @@ The update method is a function that increase the initial angle of a certain ste
 The _render()_ function renders the image by using jQuery methods to control CSS style of each <div>element by using proper parameters of each Planet instance.
 Animation is done by using a callback inside the _**window.requestAnimationFrame(callback)**_. This method tells the browser that we want to render the animation and request that the browser calls a specific function that updates the animation before the next renderign. 
 To do so, it's necessary that the _requestAnimationFrame_ method is called inside the callback routine itself. (Sample rate is 60fps).
+
+
 
