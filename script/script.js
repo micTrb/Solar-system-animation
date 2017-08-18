@@ -36,7 +36,7 @@ Animation is done by using a callback inside the _**window.requestAnimationFrame
 To do so, it's necessary that the _requestAnimationFrame_ method is called inside the callback routine itself. (Sample rate is 60fps).
 
 
-
+ 
 SCELTE FATTE: 
 
 LIBRERIA jQuery:
