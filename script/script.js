@@ -1,13 +1,6 @@
 
 /*
-Corso di Programmazione di Interfacce, Interazione uomo macchina
-Verifica Intermedia
-
-ESERCIZIO 1:
-Questo programma realizza un'animazione di un sistema solare
-animando gli elementi DIV della pagina HTML.
-
-Il programma consta di tre sezioni: 
+Interface programming course
 
     1) Variabili Globali: 
         grad2rad: coefficiente per convertire i gradi in radiati
