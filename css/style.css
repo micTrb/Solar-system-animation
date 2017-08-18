@@ -1,0 +1,54 @@
+
+
+html 
+{
+	background-color: #000000;
+}
+
+body 
+{
+	background: #000000;
+	font: 18px Helvetica-Neue, Helvetica, Arial, sans-serif;
+}
+
+#title
+{
+	color: white;
+}
+
+#content
+{
+	background-color: #030639;
+	padding: 16px;
+	border: 2px solid white;
+	margin: 0px 30px;
+	border-radius: 4px;
+	min-height: 600px;
+	margin-bottom: 25px;
+}
+
+
+.star, .planet
+{
+    border-radius: 50%;
+    position: fixed;
+   	border: 2px solid #FFFFFF;
+}
+
+.star
+{
+	border: 2px solid yellow;
+    width:120px;
+    height:120px;
+    left:40%;
+    top:30%;
+    
+}
+
+.planet
+{
+	position: fixed;
+    width:50px;
+    height:50px;    
+}
+
